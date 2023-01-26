@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Generate a QR code "
+    />
+    <meta
+      name="keywords"
+      content="qr code, qr codes, qrcodes, create qr code, qr code generator, create qrcodes, make a qr code, online qr code"
+    />
+    <!-- why we used "../" refer https://stackoverflow.com/questions/22317206/failed-to-load-resource-the-server-responded-with-a-status-of-404-not-fou -->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+   
+   <title>Simply QR Code</title>
+  </head>
+  <body>
+
+    <nav class="p-3 border-gray-200 rounded bg-indigo-200 dark:bg-gray-800 dark:border-gray-700">
+      <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="#" class="flex items-center">
+            <img src="../img/qr-code-scan-icon.png" class="h-6 mr-3 sm:h-10" alt="qrCode Logo" />
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Simply QR</span>
+        </a>
+        <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul class="flex flex-col mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+            <li>
+              <a href="/" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+            </li>
+            <!-- <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">About</a>
+            </li> -->
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Contact</a>
+            </li>
+    
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Container for demo purpose -->
+<div class="container my-24 px-6 mx-auto">
+
+    <!-- Section: Design Block -->
+    <section class="mb-32 text-gray-800">
+      <div class="flex justify-center">
+        <div class="text-center lg:max-w-3xl md:max-w-xl">
+          <h2 class="text-3xl font-bold mb-12 px-6">Contact me</h2>
+        </div>
+      </div>
+  
+      <div class="flex flex-wrap ">
+        
+          
+        </div>
+          <div class="flex justify-center flex-wrap">
+            <div class="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-3/12 px-3 lg:px-6">
+              <div class="flex items-start">
+                <div class="shrink-0">
+                  <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headset" class="w-5 text-white"
+                      role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="grow ml-6">
+                  <p class="font-bold mb-1">Ashish Vispute</p>
+                  <p >ashishvispute306@gmail.com</p>
+                  <p><a href="http://www.linkedin.com/in/ashish-vispute-885b63251"><u >LinkedIn</u></a></p>
+                </div>
+              </div>
+           
+            
+              </div>
+            </div>
+          
+    </section>
+    <!-- Section: Design Block -->
+  
+  </div>
+  <!-- Container for demo purpose -->
+
+  </body>
+</html>
